@@ -1,4 +1,4 @@
-package com.example.hebeiagriecomap.location;
+package com.example.hebeiagriecomap.view;
 
 import android.content.Context;
 import android.util.AttributeSet;

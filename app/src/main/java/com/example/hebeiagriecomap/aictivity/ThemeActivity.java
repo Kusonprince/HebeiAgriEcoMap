@@ -1,23 +1,17 @@
 package com.example.hebeiagriecomap.aictivity;
 
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Environment;
-import android.util.Log;
-import android.view.GestureDetector;
 import android.view.Menu;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.hebeiagriecomap.PGISEventHandler;
 import com.example.hebeiagriecomap.R;
-import com.example.hebeiagriecomap.query.QueryActivity;
 
 import org.jeo.data.Cursor;
 import org.jeo.data.VectorDataset;
@@ -47,7 +41,6 @@ import cn.geobeans.backend.canvas.Bitmap;
 import cn.geobeans.common.GeoPoint;
 import cn.geobeans.common.MapPosition;
 import cn.geobeans.common.MercatorProjection;
-import cn.geobeans.common.Point;
 import cn.geobeans.layers.GPathLayer;
 import cn.geobeans.layers.GPolygonLayer;
 import cn.geobeans.layers.ItemizedLayer;
@@ -60,7 +53,6 @@ import cn.geobeans.layers.tile.vector.VectorTileLayer;
 import cn.geobeans.map.Layers;
 import cn.geobeans.map.Map;
 import cn.geobeans.map.MapType;
-import cn.geobeans.map.ViewController;
 import cn.geobeans.osmdroid.overlays.ItemizedOverlayWithBubble;
 import cn.geobeans.tiling.TileSource;
 import cn.geobeans.tiling.source.bitmap.GBitmapTileFactory;

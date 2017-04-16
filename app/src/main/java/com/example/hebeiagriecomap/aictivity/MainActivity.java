@@ -15,7 +15,8 @@ import android.widget.Toast;
 
 import com.example.hebeiagriecomap.PGISEventHandler;
 import com.example.hebeiagriecomap.R;
-import com.example.hebeiagriecomap.query.QueryActivity;
+import com.example.hebeiagriecomap.dbhelper.DBHelper;
+import com.example.hebeiagriecomap.utils.ToastUtil;
 
 import cn.geobeans.android.MapActivity;
 import cn.geobeans.android.MapView;
@@ -129,6 +130,10 @@ public class MainActivity extends MapActivity implements View.OnTouchListener{
         queryButton2.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
+                if (DBHelper.getInstance(MainActivity.this).getIsCopyRunning()) {
+                    ToastUtil.show(MainActivity.this, "数据正在拉取中，请稍候...");
+                    return;
+                }
                 Intent intent3 = new Intent(MainActivity.this, ListViewActivity.class);
                 startActivity(intent3);
             }

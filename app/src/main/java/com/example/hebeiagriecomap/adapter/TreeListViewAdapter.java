@@ -1,4 +1,4 @@
-package com.example.hebeiagriecomap.listview;
+package com.example.hebeiagriecomap.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -213,7 +213,7 @@ public abstract class TreeListViewAdapter extends BaseAdapter
 	 */
 	public List<Node> getAllNodes(){
 		if(mAllNodes == null)
-			mAllNodes = new ArrayList<Node>();
+			mAllNodes = new ArrayList<>();
 		return mAllNodes;
 	}
 

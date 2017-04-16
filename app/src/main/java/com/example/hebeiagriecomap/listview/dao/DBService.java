@@ -2,7 +2,7 @@ package com.example.hebeiagriecomap.listview.dao;
 
 import android.database.sqlite.SQLiteDatabase;
 
-import com.example.hebeiagriecomap.listview.database.MyDatabaseHelper;
+import com.example.hebeiagriecomap.dbhelper.DBHelper;
 
 /**
  * Created by yyutter on 2017/4/5.
@@ -10,7 +10,7 @@ import com.example.hebeiagriecomap.listview.database.MyDatabaseHelper;
 
 public class DBService {
 
-    private MyDatabaseHelper myDatabaseHelper;
+    private DBHelper myDatabaseHelper;
     private SQLiteDatabase db;
 
     public void query(){

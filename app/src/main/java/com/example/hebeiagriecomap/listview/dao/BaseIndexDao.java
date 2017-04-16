@@ -5,7 +5,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.example.hebeiagriecomap.listview.bean.BaseIndex;
-import com.example.hebeiagriecomap.listview.database.MyDatabaseHelper;
+import com.example.hebeiagriecomap.dbhelper.DBHelper;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,10 +16,10 @@ import java.util.List;
 
 public class BaseIndexDao {
 
-    private MyDatabaseHelper myDatabaseHelper;
+    private DBHelper myDatabaseHelper;
 
     public BaseIndexDao(Context context) {
-        myDatabaseHelper = new MyDatabaseHelper(context);
+        myDatabaseHelper = new DBHelper(context);
     }
 
     /**
