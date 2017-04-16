@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.1"
+    defaultConfig {
+        applicationId "com.example.hebeiagriecomap"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+allprojects {
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+
+    compile files('libs/jeo.jar')
+    compile files('libs/jts-1.13.jar')
+    compile files('libs/lessen-1.0.jar')
+    compile files('libs/MapExpressV4.2.3.jar')
+    compile files('libs/proj4j-0.1.0-jeo.jar')
+    compile files('libs/slf4j-android-1.6.1-RC1.jar')
+    compile files('libs/theme.jar')
+    /* compile files('libs/Amap_2DMap_V2.9.2_20161026.jar')
+    compile files('libs/AMap_Search_V3.6.0_20161110.jar')*/
+    compile project(':lib')
+
+
+    compile 'org.litepal.android:core:1.5.0'
+    compile 'com.github.fg2q1q3q:DropDownMenu:1.1.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha1'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+
+    compile 'com.google.code.gson:gson:2.7'
+    testCompile 'junit:junit:4.12'
+}

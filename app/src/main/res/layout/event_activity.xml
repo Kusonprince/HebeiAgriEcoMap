@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cn.geobeans.android.MapView
+        android:id="@+id/event_mapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <ImageView
+        android:id="@+id/event_compass"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="45dip"
+        android:layout_marginLeft="24dp"
+        android:onClick="toggleLocation"
+        android:src="@mipmap/compass" />
+    <TextView
+        android:id="@+id/myLocationText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="ooo00000"/>
+
+</RelativeLayout>

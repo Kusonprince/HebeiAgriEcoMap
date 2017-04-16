@@ -1,0 +1,39 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <TextView
+        android:id="@+id/tap_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tap_instructions" />
+
+    <cn.geobeans.android.MapView
+        android:id="@+id/theme_mapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <ImageView
+        android:id="@+id/compass"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="45dip"
+        android:layout_marginLeft="24dp"
+        android:onClick="toggleLocation"
+        android:src="@mipmap/compass" />
+
+    <Button android:layout_width="wrap_content" android:id="@+id/singleTheme"   android:layout_height="wrap_content"  android:layout_alignParentLeft="true"  android:layout_alignParentBottom="true"  android:text="单色填充" />
+    <Button android:layout_width="wrap_content" android:id="@+id/randTheme"  android:layout_height="wrap_content"  android:layout_toRightOf="@id/singleTheme" android:layout_alignTop="@id/singleTheme"  android:text="随机颜色" />
+    <Button android:layout_width="wrap_content" android:id="@+id/gradeTheme"   android:layout_height="wrap_content"  android:layout_toRightOf="@id/randTheme" android:layout_alignTop="@id/randTheme"   android:text="等级颜色" />
+
+    <Button android:layout_width="wrap_content" android:id="@+id/barTheme"   android:layout_height="wrap_content"  android:layout_toRightOf="@id/gradeTheme" android:layout_alignTop="@id/gradeTheme"     android:text="柱状图" />
+    <Button android:layout_width="wrap_content" android:id="@+id/pieTheme"   android:layout_height="wrap_content"  android:layout_toRightOf="@id/barTheme" android:layout_alignTop="@id/barTheme"  android:text="饼状图" />
+    <Button android:layout_width="wrap_content" android:id="@+id/netTheme"   android:layout_height="wrap_content" android:layout_toRightOf="@id/pieTheme" android:layout_alignTop="@id/pieTheme"  android:text="折线图" />
+
+
+
+</RelativeLayout>

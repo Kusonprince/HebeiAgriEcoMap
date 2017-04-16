@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="description">河北县域农业经济电子地图</string>
+
+    <string name="app_name">河北农业经济电子地图oo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="cd_main_toolbar">main_toolbar</string>
+    <string name="toolbar_controls">数据查询</string>
+    <string name="custom_selection_view">统计排名</string>
+    <string name="image_gallery">专题图定制</string>
+    <string name="samples">发展趋势分析</string>
+    <string name="selected_items">Selected Items</string>
+    <string name="summary">Summary</string>
+    <string name="contact_me">Contact Me</string>
+    <string name="select_all">Select All</string>
+    <string name="deselect_all">Deselect All</string>
+    <string name="select_third_item">Select Third Item</string>
+    <string name="single_click_mode">Single Click Mode</string>
+    <string name="plural_mode">Plural Mode</string>
+
+    <string name="user_theme">用户设置</string>
+    <string name="else_theme">其他</string>
+    <string name="list_query">使用listView查询</string>
+
+    <string name="startlocation">开始查询</string>
+    <string name="tap_instructions">点击或长按地图</string>
+</resources>
